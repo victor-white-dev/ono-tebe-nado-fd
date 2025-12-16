@@ -1,15 +1,19 @@
+.overlay {
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  background-color: rgba(0, 0, 0, .6);
+}
+
 /* HEADER */
 
 .header {
-  padding: 92px 50px 96px 50px;
-  font-weight: 400;
-  font-size: 18px;
-}
-
-.header-container {
   display: flex; 
   align-items: center;
   line-height: 1;
+  padding: 92px 50px 96px 50px;
+  font-weight: 400;
+  font-size: 18px;
 }
 
 .main-nav__list {
@@ -126,29 +130,45 @@
   margin-block-start: 27px;
 }
 
-.lots__card {
-  position: relative;
-  z-index: 1;
+.lots__card-heading {
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}
+
+.lots__card-link {
+  text-decoration: none;
+}
+
+
+
+.card {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  position: relative;
+  position: relative;
+  z-index: 1;
   padding: 48px 40px;
   color: #fff;
   line-height: 1.2;
   inline-size: 334px;
-  block-size: 596px;
+  min-block-size: 596px;
 }
 
-.lots__card:nth-child(1) {
-  background: url('/images/card-lot-01.jpg') center center/cover no-repeat;
+.lots__card-link:hover {
+  transform: none;
 }
 
-.lots__card:nth-child(2) {
-  background: url('/images/card-lot-02.jpg') center center/cover no-repeat;
+.lots__card-movie {
+  background: url('../images/card-lot-01.jpg') center center/cover no-repeat;
 }
 
-.lots__card:nth-child(3) {
-  background: url('/images/card-lot-03.jpg') center center/cover no-repeat;
+.lots__card-book {
+  background: url('../images/card-lot-02.jpg') center center/cover no-repeat;
+}
+
+.lots__card-picture {
+  background: url('../images/card-lot-03.jpg') center center/cover no-repeat;
 }
 
 .lots__card-title {
@@ -166,6 +186,7 @@
   margin-inline-start: 40px;
   margin-block-start: 30px;
   font-size: 20px;
+  text-underline-offset: 4px;
 }
 
 /* ABOUT */
@@ -221,7 +242,7 @@
   max-inline-size: 263px;
 }
 
-.footer-nav {
+.footer-nav__list {
   display: flex;
   flex-direction: column;
   align-items: center;
