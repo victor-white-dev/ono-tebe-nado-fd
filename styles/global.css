@@ -37,18 +37,6 @@ ul {
   list-style-type: none;
 }
 
-a {
-  display: inline-block;
-  color: inherit;
-  text-underline-offset: 4px;
-  transition: transform .2s ease-in-out;
-}
-
-a:hover {
-  text-decoration: none;
-  transform: scale(1.05);  
-}
-
 img {
   width: 100%;
 }
@@ -58,12 +46,3 @@ button {
 }
 
 
-.no-space {
-  letter-spacing: normal;
-}
-
-.heading {
-  font-weight: 700;
-  font-size: 40px;
-  text-transform: uppercase;
-}
